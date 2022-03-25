@@ -1,0 +1,19 @@
+Person person = new Person();
+Console.WriteLine(person.Name);
+person.Age = 25;
+person.Print();
+class Person
+{
+    string name = "Dima";
+    int age = 1;
+    public int Age
+    {
+        set { age = value; }
+    }
+    public string Name
+    {
+        get { return name; }
+    }
+
+    public void Print() => Console.WriteLine($"Name: {name}  Age: {age}");
+}
